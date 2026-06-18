@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Rasi Auto Electrical</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -10,33 +13,74 @@
     <h1>Rasi Auto Electrical</h1>
 
     <nav>
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="services.html">Services</a> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
         <a href="bookings.html">Bookings</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <main>
-    <h2>Contact Us</h2>
+    <main>
 
-    <p>Phone: 067 345 6789</p>
-    <p>Email: info@autofix.co.za</p>
+    <h2>Contact Rasi Auto Electrical</h2>
 
-    <h3>Our Locations</h3>
-    <ul>
-        <li>Port Elizabeth Branch</li>
-        <li>East London Branch</li>
-    </ul>
+    <div class="cards">
 
+        <div class="card">
+            <h3>📞 Phone</h3>
+            <p>0748747816</p>
+        </div>
+
+        <div class="card">
+            <h3>📧 Email</h3>
+            <p>iviweimithandazo363@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <h3>📍 Locations</h3>
+            <p>Port Elizabeth Branch</p>
+            <p>East London Branch</p>
+        </div>
+
+    </div>
+
+    <div class="hours-box">
+        <h2>Visit Our Workshop</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=Gqeberha,South Africa&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+</main>
 </main>
 
 <footer>
     <p>© 2026 Rasi Auto Electrical</p>
-    <p> Call: <a href="tel:0748747816">074 874 7816</a> </p>
-    <p> Email: <a href="mailto:info@autofixcars.co.za">info@autofixcars.co.za</a> </p>
-</footer>
+    <p>Call: <a href="tel:0748747816">0748747816</a></p>
+    <p> Email: <a href="mailto:info@autoelectrical.co.za">info@autoelectrical.co.za</a> </p>
+    <form onsubmit="return validateForm()">
 
+    <label>Name</label>
+    <input type="text" id="name">
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <label>Message</label>
+    <textarea id="message"></textarea>
+
+    <input type="submit" value="Send Message">
+
+</form>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
